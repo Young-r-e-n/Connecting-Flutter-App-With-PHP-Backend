@@ -39,24 +39,24 @@ Creating a login and signup page in Flutter that communicates with a PHP backend
 
 First, ensure you have Flutter installed on your system. If not, follow the Flutter installation guide on the official Flutter website.
 
-1. **Create a new Flutter project**:
-   ```
+1. Create a new Flutter project:
+   
    flutter create flutter_login_signup
-   ```
-2. **Navigate to the project directory**:
-   ```
+   
+2. Navigate to the project directory:
+   
    cd flutter_login_signup
-   ```
+   
 
 ### Step 2: Creating the Login Page
 
-1. **Create a new Dart file for the login page**:
-   ```
+1. Create a new Dart file for the login page:
+   
    touch lib/login_page.dart
-   ```
+   
 
-2. **Implement the login page**:
-   ```dart
+2. Implement the login page:
+   dart
    import 'package:flutter/material.dart';
    import 'dart:convert';
    import 'package:http/http.dart' as http;
@@ -123,17 +123,17 @@ First, ensure you have Flutter installed on your system. If not, follow the Flut
        );
      }
    }
-   ```
+   
 
 ### Step 3: Creating the Signup Page
 
-1. **Create a new Dart file for the signup page**:
-   ```
+1. Create a new Dart file for the signup page:
+   
    touch lib/signup_page.dart
-   ```
+   
 
-2. **Implement the signup page**:
-   ```dart
+2. Implement the signup page:
+   dart
    import 'package:flutter/material.dart';
    import 'dart:convert';
    import 'package:http/http.dart' as http;
@@ -200,14 +200,14 @@ First, ensure you have Flutter installed on your system. If not, follow the Flut
        );
      }
    }
-   ```
+   
 
 ### Step 4: Setting Up the PHP Backend
 
 You'll need to create two PHP scripts: `login.php` and `signup.php`. These scripts will handle the login and signup requests from the Flutter app. Ensure your PHP server is running and accessible.
 
-1. **Create `login.php`**:
-   ```php
+1. Create `login.php`:
+   php
    <?php
    // Include your database connection file
    require_once 'db_config.php';
@@ -232,10 +232,10 @@ You'll need to create two PHP scripts: `login.php` and `signup.php`. These scrip
    $stmt->close();
    $conn->close();
    ?>
-   ```
+   
 
-2. **Create `signup.php`**:
-   ```php
+2. Create `signup.php`:
+   php
    <?php
    // Include your database connection file
    require_once 'db_config.php';
@@ -259,16 +259,17 @@ You'll need to create two PHP scripts: `login.php` and `signup.php`. These scrip
    $stmt->close();
    $conn->close();
    ?>
-   ```
+   
 
 ### Step 5: Running the Flutter App
 
-1. **Run the Flutter app**:
-   ```
+1. Run the Flutter app:
+   
    flutter run
-   ```
+   
 
 This setup provides a basic example of how to create a login and signup page in Flutter that communicates with a PHP backend via an API. Remember to replace `'http://your-api-url.com/login.php'` and `'http://your-api-url.com/signup.php'` with your actual API URLs. Also, ensure your PHP backend is properly set up to handle these requests, including proper validation and security measures.
 
-#   C o n n e c t i n g - F l u t t e r - A p p - W i t h - P H P - B a c k e n d  
+#   C o n n e c t i n g - F l u t t e r - A p p - W i t h - P H P - B a c k e n d 
+ 
  
